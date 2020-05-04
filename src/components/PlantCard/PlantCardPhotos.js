@@ -1,11 +1,9 @@
 import React from "react";
 
 const PlantCardPhotos = (props) => {
-
-	{console.log(props)}
 	return (
 		<div>
-			<img src={props.img} alt=''></img>
+			<img src={props.image} alt=""></img>
 		</div>
 	);
 };
