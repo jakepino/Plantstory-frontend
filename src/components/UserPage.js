@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import PlantCard from "./PlantCard/PlantCard";
+import Container from "react-bootstrap/Container";
 
-const BaseURL = "http://localhost:3000/"; // CHANGE FOR JOEY
+const BaseURL = "http://localhost:3001/"; // CHANGE FOR JOEY
 
-const UserURL = `${BaseURL}users/13`; // USER HARDCODE
+const UserURL = `${BaseURL}users/11`; // USER HARDCODE
 const PostURL = `${BaseURL}posts`;
 const PlantURL = `${BaseURL}plants`;
 const PhotoURL = `${BaseURL}photos`;
@@ -87,9 +88,9 @@ export default class MainPage extends Component {
 
 	render() {
 		return (
-			<div>
+			<Container>
 				<PlantCard userPost={this.state.userPosts} />
-			</div>
+			</Container>
 		);
 	}
 

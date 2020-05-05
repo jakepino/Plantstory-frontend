@@ -3,6 +3,7 @@ import PlantCardUsername from "./PlantCardUsername";
 import PlantCardPhotos from "./PlantCardPhotos";
 import PlantCardDetails from "./PlantCardDetails";
 import PlantCardComments from "./PlantCardComments";
+import Card from "react-bootstrap/Card";
 
 export default class PlantCard extends Component {
 	// renderPhotos = () => {
@@ -19,7 +20,7 @@ export default class PlantCard extends Component {
 		let { user, posts, photos, plant } = this.props.userPost;
 
 		return (
-			<div>
+			<Card bg="light" style={{ width: '18rem' }}>
 				<PlantCardUsername user={user} />
 
 				{photos.map((photo) => (
@@ -27,8 +28,8 @@ export default class PlantCard extends Component {
 				))}
 
 				<PlantCardDetails plant={plant} user={user} post={posts} />
-				<PlantCardComments />
-			</div>
+				{/* <PlantCardComments /> */}
+			</Card>
 			// <div PlantCard Username container/>
 			// <div PlantCard Pictures container/>
 			// <div PlantCard Details container/> // user uploaded info
