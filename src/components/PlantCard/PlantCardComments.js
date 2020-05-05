@@ -1,10 +1,11 @@
 import React from "react";
+import PlantCardListComments from "./PlantCardListComments"
 
 const PlantCardComments = (props) => {
 	return (
-		<div>
-			<div>comments</div>
-		</div>
+		<>
+			<PlantCardListComments/>
+		</>
 	);
 };
 

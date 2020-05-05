@@ -17,7 +17,7 @@ const PlantCardDetails = (props) => {
 
    <ButtonGroup style={{width:"100%"}}>
         <Button variant="success" style={{width:'50%'}} >Like </Button>
-        <Button  variant="success" style={{width:'50%'}}>Comment</Button>
+        <Button onClick={props.toggleNewComment} variant="success" style={{width:'50%'}}>Comment</Button>
    </ButtonGroup>
 
     </Card.Body>
