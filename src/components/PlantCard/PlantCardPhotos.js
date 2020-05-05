@@ -1,10 +1,11 @@
 import React from "react";
+import Card from "react-bootstrap/Card"
 
 const PlantCardPhotos = (props) => {
 	return (
-		<div>
-			<img src={props.image} alt=""></img>
-		</div>
+		<>
+			<Card.Img variant="top" src={props.image} alt=""></Card.Img>
+		</>
 	);
 };
 
