@@ -16,8 +16,8 @@ const PlantCardDetails = (props) => {
       <Card.Body>{post.description}</Card.Body>
 
    <ButtonGroup style={{width:"100%"}}>
-        <Button variant="success" style={{width:'50%'}}>Like </Button>
-        <Button variant="success" style={{width:'50%'}}>Comment</Button>
+        <Button variant="success" style={{width:'50%'}} >Like </Button>
+        <Button  variant="success" style={{width:'50%'}}>Comment</Button>
    </ButtonGroup>
 
     </Card.Body>
